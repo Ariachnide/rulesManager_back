@@ -1,0 +1,27 @@
+{
+  "name": "rulesmanager_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Ariachnide/rulesmanager_back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Ariachnide/rulesmanager_back/issues"
+  },
+  "homepage": "https://gitlab.com/Ariachnide/rulesmanager_back#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  }
+}
