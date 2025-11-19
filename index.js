@@ -1,6 +1,8 @@
 import dotenv from "dotenv";
 import express from "express";
 import { connectDB } from "./db.js";
+import termRouter from "./routes/terms.js";
+import ruleRouter from "./routes/rules.js";
 import cors from "cors";
 dotenv.config({ path: "./.env" });
 
@@ -15,6 +17,9 @@ app.use(cors());
 app.get("/", (req, res) => {
     res.send("- RulesManager app online -");
 });
+
+app.use("/", termRouter);
+app.use("/", ruleRouter);
 
 app.listen(process.env.API_PORT, () => {
     console.log(`RulesManager app listening at ${process.env.API_BASE_URL}:${process.env.API_PORT}`);
